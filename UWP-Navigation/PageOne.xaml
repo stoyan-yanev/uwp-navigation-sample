@@ -1,0 +1,40 @@
+﻿<base:BasePage x:Class="UWP_Navigation.PageOne"
+               xmlns:base="using:UWP_Navigation.Helpers"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:local="using:UWP_Navigation"
+               xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+               mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Padding="12"
+                   TextWrapping="WrapWholeWords"
+                   Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+
+        <Image Grid.Row="1"
+               Source="Assets/emoji1.png"
+               Stretch="Uniform"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Bottom" />
+
+        <Button Grid.Row="1"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Margin="8"
+                Content="Go to Page Two" 
+                Click="OnGoToPageTwoClick"/>
+
+        <Button Grid.Row="1"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Margin="8"
+                Content="Go to Page Three" 
+                Click="OnGoToPageThreeClick"/>
+    </Grid>
+</base:BasePage>
